@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #1E293B;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* College aesthetic warm scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D2C9;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B0A4;
+}
+
+/* Lined notebook grid paper effect for notes editor */
+.paper-pattern {
+  background-color: #FFFFFF;
+  background-image: radial-gradient(#E2E8F0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Monospace metrics styling */
+.font-mono-metric {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Warm highlighter effect */
+.highlight-yellow {
+  background: linear-gradient(180deg, transparent 60%, #FEF08A 60%);
+}
+
+.highlight-mint {
+  background: linear-gradient(180deg, transparent 60%, #BBF7D0 60%);
+}
+
+.highlight-peach {
+  background: linear-gradient(180deg, transparent 60%, #FED7AA 60%);
+}
